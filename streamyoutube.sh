@@ -98,7 +98,7 @@ while true; do
                 -r $FRAMERATE \
                 -g $INTRA \
                 -keyint_min $FRAMERATE \
-                -preset ultrafast \
+                -preset fast \
                 -tune zerolatency \
                 -c:a aac \
                 -shortest \
