@@ -78,7 +78,7 @@ while true; do
         echo "Daytime period: $SUNRISE_TIME to $SUNSET_TIME, Current: $(date +%H%M)"
         
         timeout 1800 bash -c "
-            libcamera-vid -n -t 0 \
+            rpicam-vid -n -t 0 \
                 --width $WIDTH --height $HEIGHT \
                 --framerate $NIGHT_FRAMERATE \
                 --shutter $NIGHT_SHUTTER \
@@ -109,7 +109,7 @@ while true; do
         echo "Daytime period: $SUNRISE_TIME to $SUNSET_TIME, Current: $(date +%H%M)"
         
         timeout 1800 bash -c "
-            libcamera-vid -n -t 0 \
+            rpicam-vid -n -t 0 \
                 --width $WIDTH --height $HEIGHT \
                 --framerate $FRAMERATE \
                 --codec h264 \
